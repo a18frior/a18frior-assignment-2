@@ -10,6 +10,11 @@ public class Mountain {
 
         super();
     }
+    public String info(){
+        String tmp;
+        tmp= this.plats+" "+ this.hojd;
+        return tmp;
+    }
 
 
     public Mountain(String namn, String plats, int hojd){
@@ -18,15 +23,12 @@ public class Mountain {
         this.plats=plats;
         this.hojd=hojd;
     }
-    public String info(){
-        String tmp;
-        tmp= plats+""+ hojd;
-        return tmp;
-    }
+
 
     @Override
     public String toString() {
 
         return this.namn;
     }
+
 }
